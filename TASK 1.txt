@@ -1,0 +1,88 @@
+TASK 1:
+
+
+1.Difference between HTTP1.1 vs HTTP2
+
+	The Hypertext Transfer Protocol or HTTP, is an application protocol that has been the de facto standard for communication on the World Wide Web since its invention in 1989. From the release of HTTP/1.1 in 1997 until recently, there have been few revisions to the protocol.
+	
+	HTTP/1.1
+	
+	>.Developed by Tim Berners-Lee in 1989 as a communication standard for the World Wide Web. 
+	>.In this process, a client sends a text-based request to a server by calling a method like GET or POST.
+	>.In response, the server sends a resource like an HTML page back to the client.
+	
+	HTTP/2
+	
+	>.HTTP/2 published in May 2015, began as the SPDY protocol, developed primarily at Google with the intention of reducing web page load latency by using techniques such as compression, multiplexing, and prioritization.
+	>.From the beginning, many browsers supported this standardization effort, including Chrome, Opera, Internet Explorer, and Safari. 
+	>.Due in part to this browser support, there has been a significant adoption rate of the protocol since 2015, with especially high rates among new sites.
+	
+	From a technical point of view, one of the most significant features that distinguishes HTTP/1.1 and HTTP/2 is the binary framing layer, which can be thought of as a part of the application layer in the internet protocol stack.HTTP/2 uses the binary framing layer to encapsulate all messages in binary format where HTTP/1.1, which keeps all requests and responses in plain text format.
+	
+
+2.HTTP version history
+
+	>.HTTP (HyperText Transfer Protocol) is the underlying protocol of the World Wide Web, Developed by Tim Berners-Lee. 
+	
+	>.HTTP/0.9 - The One-Line Protocol (1991)
+		Initial version of HTTP is a simple client to server protocol. And the request type of this version is single line method, it support GET request method only. The default method to request resources from the server called as the GET Method.
+		
+	>.HTTP/1.0 - Building Extensibility (1996) 
+		This version is Browser-friendly protocol, It provided with header fields including rich metadata about both request and response 
+		And it supports GET, HEAD and POST Methods. 
+		
+	>.HTTP/1.1 - The Standardized Protocol (1997)
+		This is the HTTP version currently in common use.
+		It introduced critical performance optimizations and feature enhancements, chunked transfers, virtual hosting, faster response and great bandwidth savings by adding cache support.
+		It supports GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS Methods.  
+		
+	>.HTTP/2.0 and the future
+		All above HTTP versions are being used by major web servers and browsers today. But modern enhancements like HTTP/2.0, Server Side Events (SSE), and Websockets have changed the way that the traditional HTTP works.
+
+
+3.Difference between BrowserJS vs NodeJS	
+
+	BrowserJS:
+		>.Javascript is a programming language that is used for writing scripts on the websites.
+		>.Javascript is used in Front-end development.
+		>.It can only run in the browsers, And it is basically used on the Client – Side.
+		>.It can run any engine like Spider monkey(FireFox), JavaScript core(Safari), V8(Google Chrome).
+	
+	NodeJS:
+		>.NodeJS is a Javascript runtime environment.
+		>.NodeJS is used in Server-Side development.
+		>.NodeJS code can be run outside the browser, And it is mostly used on the Server - Side.
+		>.It can only run in V8 engine which is mainly using by google chrome.And javascript program which will be written under this NodeJS will be always run in V8 engine. 
+
+
+4.What happens when you type URL in address bar in the browser?
+
+	Address bar:
+		In a web browser, the address bar (also location bar or URL bar) is a GUI widget that shows the current URL. The user can type a URL into the bar to navigate to a chosen website. The user can edit the text to navigate to a new location. For instance, clicking the mouse in the address bar allows you to change the address or delete it and enter a new one. The address should be a URL, such as www.example.com.
+		
+	IP address:
+		An Internet Protocol address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.
+		Two types of IP address are Static and Dynamic IP address.
+		
+	DNS:
+		Domain Name System maintains and maps the name of the website, i.e. URL, and particular IP address it links to. Every URL on the internet has a unique and static IP address which is of the computer which hosts the server of the website requested.
+		
+	>.The Browser checks the cache for the DNS record to find the corresponding IP address of the searched URL
+	>.If the cache Doesn't have the IP address of the corresponding domain searched in the Browser the ISP’s DNS server initiates a DNS query to find the particular IP address of the server that hosts the website.
+	>.DNS query make recursive search on the Servers to find the IP address of the particular domain name. It is performed based on the architecture of the website domain name. The Architecture is based on the domain.
+	>.As usual the browser initiates the TCP connection between the client and server.This connection is established using the connection called TCP/IP three-way handshake.This is a three-step process where the client and the server exchange SYN(synchronize) and ACK(acknowledge) messages to establish a connection.
+	>.The client machine sends a SYN packet to the server over the internet, asking if it is open for new connections.If the server has open ports that can accept and initiate new connections, The client will receive the SYN/ACK packet from the server and will acknowledge it by sending an ACK packet.Then a TCP connection is established for data transmission.
+	>.The Browser send HTTP request to the Webserver and the GET request is created by the Browser to fetch the data form the Server
+	>.The Server receives the GET request and process the request intiated.The responses to the request are created in the form of JSON or XML or HTML only.
+	>.The processed request sends out as HTTP response.
+	>.These response will be received by the network layer of the browser, and those processed files will be sent to the rendering part of the web browser.
+	>.After all the process, it will render the bare bone HTML skeleton. Then it will check the HTML tags and send out GET requests for additional elements on the web page, such as images, CSS stylesheets, JavaScript files, etc.
+	>.The HTML and CSS files will be parsed using the parser DOM and CSSOM. After that the JavaScript files will be processed by the engine. After all these processes the Webpage will be started appearing on your browser.
+
+
+		
+
+
+		
+
+		
